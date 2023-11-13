@@ -25,6 +25,7 @@ public class LoginController {
 
 		if (username.equals(predefinedUsername) && password.equals(predefinedPassword)) {
 			session.setAttribute("username", username);
+
 			return "redirect:/syouhinn";
 		} else {
 			// ログイン失敗時の処理を追加

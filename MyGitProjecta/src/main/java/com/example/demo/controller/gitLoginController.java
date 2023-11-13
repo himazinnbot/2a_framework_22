@@ -7,17 +7,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import jakarta.servlet.http.HttpSession;
 
 @Controller
-public class LoginController {
+public class gitLoginController {
 
 	//一覧表示用.
-	@RequestMapping(path = "/login", method = RequestMethod.GET)
+	@RequestMapping(path = "/gitpralogin", method = RequestMethod.GET)
 	public String viewPage() {
 
-		return "login";
+		return "gitpralogin";
 	}
 
 	//ログイン検証用
-	@RequestMapping(path = "/login", method = RequestMethod.POST)
+	@RequestMapping(path = "/gitpralogin", method = RequestMethod.POST)
 	public String loginPost(String username, String password, HttpSession session) {
 
 		String predefinedUsername = "gitlogin";
@@ -26,10 +26,10 @@ public class LoginController {
 		if (username.equals(predefinedUsername) && password.equals(predefinedPassword)) {
 			session.setAttribute("username", username);
 
-			return "redirect:/syouhinn";
+			return "redirect:/gititemlist";
 		} else {
 			// ログイン失敗時の処理を追加
-			return "redirect:/login";
+			return "redirect:/gitpralogin";
 		}
 	}
 }

@@ -13,7 +13,7 @@ public class gitLoginController {
 	@RequestMapping(path = "/gitpralogin", method = RequestMethod.GET)
 	public String viewPage() {
 
-		return "gitpralogin";
+		return "gitlogin";
 	}
 
 	//ログイン検証用

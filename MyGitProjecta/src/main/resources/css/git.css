@@ -1,0 +1,18 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    text-align: center; /* 画像を中央に配置するために必要 */
+    margin-top: 50px; /* 余白を追加 */
+}
+
+img {
+    max-width: 50%; /* 画像が親要素の幅を超えないようにする */
+    height: auto; /* アスペクト比を保持したまま、高さを自動調整 */
+    display: block; /* 不要な空白を削除するために画像をブロック要素として表示 */
+    margin: 0 auto; /* 画像を水平方向に中央に配置 */
+}

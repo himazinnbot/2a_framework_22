@@ -1,5 +1,5 @@
 package com.example.demo.controller;
 
 public class BranchController {
-	//taya
+	//ishibasi sine kasu gomi sine
 }
